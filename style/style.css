@@ -1,0 +1,707 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+
+/*header image*/
+#home{
+	background: url("../image/profile.png")center center no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+}
+
+
+
+/*width*/
+header, #occupation, #feat_work, #awards, #about_content, #contact, footer{
+	width: 71%;
+	margin: auto;
+}
+
+
+
+/*header logo*/
+.logo{
+	width: 100%;
+	padding: 1% 0 25% 0;
+}
+
+.kh , .khc{
+	color: white;
+	float: left;
+	font-family: Helvetica, "sans-serif";
+	font-size: 32px;
+	text-transform: uppercase;
+}
+.kh{
+	padding: 2% 0;
+	font-weight: 700;
+}
+
+.khc{
+	padding: 1.7% 3%;
+	font-weight: 900
+}
+
+.kh p, .khc p{
+	color: white;
+}
+
+#navcpButton, #navcp{
+	display: none;
+}
+
+header #kenya, header #kenyac{
+	font-family: Helvetica, "sans-serif";
+	text-transform: uppercase;
+	color: white;
+}
+
+header #kenya{
+	font-size: 64px;
+}
+
+header #kenyac{
+	font-size: 52px;
+	padding: 1% 93% 1% 2.5%;
+}
+
+
+
+/*occupation*/
+#occupation{
+	padding: 4.5% 0;
+}
+
+#occupation h1{
+	font-family: Helvetica, "sans-serif";
+	font-size: 40px;
+	text-transform: uppercase;
+	padding: 2% 0;
+	text-align: right;
+}
+
+
+
+/*feat works*/
+#feat_work {
+	height: 170vh;
+	padding: 1.5% 0;
+}
+#feat_work_title{
+	float: left;
+	padding: 0 0 50% 4%;
+}
+
+#feat_work_title h1{
+	font-family: helvetica;
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#feat_work .work{
+	width: 80%;
+	padding: 0 0 2% 0;
+	float: right;
+}
+
+#feat_work .work p{
+	float: right;
+}
+
+#feat_work .desktop {
+	font-family: helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	font-weight: lighter;
+	padding: 30% 0 0.6% 0;
+	border-bottom: none;
+	transition: border-bottom 300ms linear 0s;
+}
+
+#feat_work .desktop:hover{
+	border-bottom: solid 4px #7F0019;
+}
+
+#feat_work p img{
+	padding: 0 0 0 2%;
+}
+
+#feat_work .tablet{
+	display: none;
+}
+
+
+
+
+/*awards*/
+#awards{
+	height: 190vh;
+	padding: 1.5% 0;
+}
+
+#award_title{
+	float: right;
+	padding: 0 0 50% 1%;
+}
+
+#award_title h1{
+	font-family: helvetica;
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#awards .award{
+	width: 97%;
+	padding: 2% 0;
+}
+
+/*slider*/
+#awards .swiper{
+	width: 53%;
+	height: fit-content;
+	float: left;
+}
+
+#awards .swiper-slide img{
+	width: 100%;
+}
+
+#awards .swiper .swiper-button-next,  #awards .swiper .swiper-button-prev{
+	color: black;
+}
+
+#awards .swiper .swiper-pagination-bullet-active{
+	background: black;
+}
+
+
+#awards p{
+	font-family: helvetica;
+	font-size: 24px;
+	float: left;
+	font-weight: lighter;
+	width: 32%;
+	padding: 21% 0 4% 2%;
+}
+
+
+
+/*about*/
+#about{
+	background: url("../image/kenya hara about.jpeg") center center no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+#about_content{
+	height: 70vh;
+}
+
+#about_title{
+	float: left;
+	padding: 5% 97.5% 0 2.5%;
+	width: 15%;
+}
+
+#about_title h1{
+	font-family: helvetica;
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+}
+
+#top{
+	float: left;
+	padding: 33% 0 0 2.5%;
+}
+
+#top_icon{
+	transform: none;
+	transition: transform 300ms linear 0ms;
+}
+
+#top_icon:hover{
+	transform: rotate(90deg);
+}
+
+
+
+/*contact*/
+#contact{
+	padding: 6% 0 8% 0;
+}
+
+#contact_title{
+	float: right;
+	padding: 0 4% 15% 0;
+}
+
+#contact_title h1{
+	font-family: helvetica;
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#contact_content{
+	width: 80%;
+}
+
+#contact_content h2{
+	font-family: helvetica;
+	font-size: 36px;
+	font-weight: 400;
+	padding: 0 0 4.5% 0;
+}
+
+#contact_content p, #contact_content #button h3{
+	font-family: helvetica;
+	font-size: 24px;
+	text-transform: uppercase;
+	padding: 2.5% 0 1% 0;
+}
+
+#contact_content input, #contact_content #messege textarea{
+	width: 100%;
+	padding: 1% 0;
+	height: 6vh;
+	border: none;
+	background-color: lightgrey;
+}
+
+#contact_content #messege textarea{
+	height: 16vh;
+}
+
+#contact_content #button{
+	padding: 2.5% 0;
+}
+
+#contact_content #button h3{
+	text-decoration: none;
+	background-color: #7F0019;
+	color: white;
+	font-weight: bold;
+	max-width: 190px;
+	letter-spacing: 8px;
+	padding: 1.5% 3%;
+	cursor: pointer;
+}
+
+
+#contact img{
+	float: right;
+	width: 10%;
+	padding: 0 2%;
+}
+
+/*footer*/
+footer{
+	border-top: solid 7px #7F0019;
+	padding: 6% 0;
+}
+
+footer h1 a{
+	text-decoration: none;
+	font-family: helvetica;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 74px;
+	color: black;
+}
+
+footer #nav{
+	font-family: helvetica;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+footer p{
+	padding: 3% 0;
+}
+
+footer p a{
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+footer #socials{
+	padding: 0 0 0 4%;
+}
+
+footer #socials a{
+	float: left;
+	width: 8%;
+}
+
+footer #socials a img{
+	width: 40%;
+}
+
+
+
+
+
+/*tablet*/
+@media (max-width:1000px){
+	
+	/*width*/
+	header, #occupation, #feat_work, #awards, #about_content, #contact, footer{
+		width: 96%;
+		margin: auto;
+	}
+	
+	
+	/*menu*/
+	#navcpButton, #navcp{
+		display: block;
+	
+	}
+	
+	#navcpButton{
+		width: 28px;
+		height: 24px;
+		padding: 2px 5px;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		z-index: 10;	
+		cursor: pointer;
+	}
+
+
+	#navcpButton > div {
+		width: 28px;
+		height: 5px;
+		background: white;
+		margin: 3px 0;
+		border: solid 0.5px dimgrey;
+		border-radius: 4px;
+	}
+
+
+	#navcp {
+		z-index: 9;
+		background-color: white;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0px;
+		right: -2000px;
+		transition:right 300ms linear 0s;
+	}
+
+	
+	.logo .kh , .logo .khc{
+		font-size: 24px;
+	}
+	
+	#navcp .logo{
+		padding: 1% 0 4% 2%;
+	}
+
+	#navcp .logo p{
+		color: black;
+	}	
+	
+	#navcp #menu_content{
+		padding: 10% 0 5% 10%;
+	}
+	
+	#navcp #menu_content p, #navcp #featul ul a{
+		padding: 2% 0 3% 5%;
+	}
+	
+	#navcp #menu_content p a, #navcp #featul ul a{
+		font-family: helvetica;
+		font-size: 24px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: left;
+		color: black;
+	}
+	
+	#navcp #featul{
+		padding: 0 0 3% 20%;
+	}
+
+	#navcp #featul ul{
+		list-style-type: none;
+	}
+
+	#navcp #featul ul a{
+		color: grey;
+	}
+	
+	#navcp #socialm{
+		padding: 5% 0 0 13%;
+	}
+	
+	#navcp #socialm img{
+		width: 9%;
+		float: left;
+		padding: 0 4% 0 0;
+		cursor: pointer;
+	}
+	
+	
+	/*header*/
+	header #kenyac{
+		font-size: 52px;
+		padding: 1% 90% 1% 7.5%;
+	}
+	
+	/*occupation*/
+	#occupation h1{
+		font-family: Helvetica, "sans-serif";
+		font-size: 32px;
+		text-transform: uppercase;
+		padding: 1.5% 0;
+		text-align: right;
+		font-weight: 600;
+	}
+	
+	
+	/*feat work*/
+	#feat_work{
+		height: 210vh;
+	}
+	
+	#feat_work_title{
+		padding: 0 0 50% 1.5%;
+	}
+
+	#feat_work_title h1{
+		font-size: 40px;
+	}	
+	
+	#feat_work .work{
+		width: 94%;
+		padding: 0 0 4% 5%;
+	}
+	
+	#feat_work .desktop{
+		display: none;
+	}
+	
+	#feat_work .tablet{
+		display: block;
+		font-family: helvetica;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: black;
+		font-size: 20px;
+		font-weight: lighter;
+		padding: 0 0 0.6% 0;
+		margin: 0 78% 0 10%;
+		border-bottom: none;
+	}
+
+
+	
+
+	#feat_work p img{
+		float: right;
+		padding: 0 0 1.5% 0;
+		width: 90%;
+	}
+	
+	
+	
+	/*award*/
+	#awards{
+		height: 250vh;
+	}
+	
+	#award_title h1{
+		font-size: 40px;
+	}
+	
+	#awards .swiper{
+		width: 80%;
+	}
+	
+	#awards p{
+		font-size: 20px;
+		padding: 1.5% 0 10% 0;
+		width: 50%;
+	}
+	
+	
+	
+	/*about*/
+	#about{
+		height: 60vh;
+	}
+	
+	#about_title{
+		padding: 5% 97% 10% 0;
+	}
+	
+	#about_title h1{
+		font-size: 42px;
+	}
+	
+	#top{
+		transform: rotate(90deg);
+		padding: 6% 0 0 4%;
+	}
+	
+	#top_icon:hover{
+		transform: rotate(0deg);
+	}
+	
+	
+	
+	/*contact*/
+	#contact{
+		padding: 15% 0 8% 2%;
+	}
+	#contact_title h1{
+		font-size: 40px;
+	}
+	
+	#contact_content h2{
+		font-size: 32px;
+	}
+	
+	#contact_content p, #contact_content #button h3{
+		font-size: 20px;
+	}
+	
+	#contact_content #button h3{
+		max-width: 18.2vh;
+	}
+	
+	#contact img{
+		display: none;
+	}
+	
+	
+	
+	/*footer*/
+	footer{
+		display: none;
+	}
+
+}
+
+
+
+@media (max-width:550px){
+	
+	#navcp #menu_content{
+		padding: 20% 0 10% 10%;
+	}
+	
+	#navcp #menu_content p, #navcp #featul ul a{
+		padding: 4% 0 4% 5%;
+	}
+	
+	#navcp #menu_content p a, #navcp #featul ul a{
+		font-size: 20px; 
+	}
+	
+	#navcp #featul{
+		padding: 0 0 6% 20%;
+	}
+	
+	.logo{
+		padding: 1% 0 50% 0;
+	}
+	
+	#occupation h1{
+		font-size: 24px;
+		padding: 2% 0;
+	}
+	
+	#feat_work{
+		height: 120vh;
+	}
+	
+	#feat_work_title h1{
+		font-size: 28px;
+	}
+	
+	#feat_work .work{
+		padding: 0 0 4% 0;
+		width: 90%;
+	}
+	
+	#feat_work p img {
+		width: 94%;
+	}
+	
+	#feat_work .tablet {
+		margin: 0 6%;
+		font-size: 16px;
+	}
+	
+	
+	#awards{
+		height: 140vh;
+	}
+	
+	#award_title h1{
+		font-size: 32px;
+	}
+	
+	#awards .award p{
+		font-size: 16px;
+		width: 70%;
+	}
+	
+	#about{
+		height: 40vh;
+	}
+	
+	#about_title{
+		padding: 8% 97% 10% 2%;
+		width: 0;
+	}
+	
+	#about_title h1{
+		font-size: 28px;
+	}
+	
+	
+	#contact_title h1{
+		font-size: 28px;
+	}
+	
+	#contact_content h2{
+		font-size: 24px;
+	}
+	
+	#contact_content p, #contact_content #button h3{
+		font-size: 16px;
+	}
+	
+	#contact_content input{
+		height: 4vh;
+	}
+	
+	#contact_content #button h3{
+		max-width: 14.5vh;
+	}
+	
+	
+}
+
+

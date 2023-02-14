@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	width: 71%;
+	margin: auto;
+}
+
+
+/*header logo*/
+.logo{
+	width: 100%;
+	padding: 1% 0 10% 0;
+}
+
+header .kh, header .khc{
+	float: left;
+	font-family: Helvetica, "sans-serif";
+	font-size: 32px;
+	text-transform: uppercase;
+	color: black;
+}
+
+header .kh{
+	padding: 2% 0;
+	font-weight: 700;
+}
+
+header .khc{
+	padding: 1.7% 3%;
+	font-weight: 900
+}
+
+#navcpButton, #navcp{
+	display: none;
+}
+
+
+
+/*about*/
+#about{
+	height: 65vh;
+}
+
+#about img{
+	width: 82%;
+}
+
+#about_title{
+	float: right;
+	padding: 0 8% 8% 0;
+}
+
+#about_title h1{
+	font-family: helvetica;
+	font-size: 64px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+
+/*content*/
+#content p{
+	font-family: helvetica;
+	font-size: 20px;
+	padding: 1% 0;
+	text-align: justify;
+}
+
+#content{
+	padding: 0 0 6% 0;
+}
+
+
+
+/*footer*/
+footer{
+	border-top: solid 7px #7F0019;
+	padding: 6% 0;
+}
+
+footer h1 a{
+	text-decoration: none;
+	font-family: helvetica;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 74px;
+	color: black;
+}
+
+footer #nav{
+	font-family: helvetica;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+footer p{
+	padding: 3% 0;
+}
+
+footer p a{
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+footer #socials{
+	padding: 0 0 0 4%;
+}
+
+footer #socials a{
+	float: left;
+	width: 8%;
+}
+
+footer #socials a img{
+	width: 40%;
+}
+
+
+
+@media (max-width:1000px){
+	body{
+		width: 96%;
+	}
+	
+
+	
+	
+	/*menu*/
+	#navcpButton, #navcp{
+		display: block;
+	
+	}
+	
+	#navcpButton{
+		background: radial-gradient(#111111);
+		width: 28px;
+		height: 24px;
+		padding: 2px 5px;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		z-index: 1;	
+		cursor: pointer;
+	}
+
+
+	#navcpButton > div {
+		width: 26px;
+		height: 4px;
+		background: black;
+		margin: 3px 0;
+		border-radius: 4px;
+	}
+
+
+	#navcp {
+		background-color: white;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0px;
+		right: -2000px;
+		transition:right 300ms linear 0s;
+	}
+	
+
+	.logo .kh , .logo .khc{
+		font-size: 24px;
+	}
+	
+	#navcp .logo{
+		padding: 1% 0 4% 2%;
+	}
+
+	#navcp .logo p{
+		color: black;
+	}
+	
+	#navcp #menu_content{
+		padding: 10% 0 5% 10%;
+	}
+	
+	#navcp #menu_content p, #navcp #featul ul a{
+		padding: 2% 0 3% 5%;
+	}
+	
+	#navcp #menu_content p a, #navcp #featul ul a{
+		font-family: helvetica;
+		font-size: 24px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: left;
+		color: black;
+	}
+	
+	#navcp #featul{
+		padding: 0 0 3% 20%;
+	}
+
+	#navcp #featul ul{
+		list-style-type: none;
+	}
+
+	#navcp #featul ul a{
+		color: grey;
+	}
+	
+	#navcp #socialm{
+		padding: 5% 0 0 13%;
+	}
+	
+	#navcp #socialm img{
+		width: 9%;
+		float: left;
+		padding: 0 4% 0 0;
+		cursor: pointer;
+	}
+	
+	
+	
+	#about{
+		height: 40vh;
+	}
+	
+	#about_title h1{
+		font-size: 48px;
+	}
+	#content p{
+		font-size: 16px;
+	}
+	
+	#content{
+		width: 86%;
+		padding: 7% 0 8% 0;
+	}
+	
+	footer{
+		display: none;
+	}
+	
+	
+}
+
+@media (max-width:550px){
+	
+	#about{
+		height: 22vh;
+	}
+	
+	#about_title{
+		position: fixed;
+		padding: 8% 1.5% 0 89%;
+	}
+	
+	#about_title h1{
+		font-size: 36px;
+	}
+	
+	#content p{
+		font-size: 12px;
+	}
+	
+	#navcp #menu_content{
+		padding: 20% 0 10% 10%;
+	}
+	
+	#navcp #menu_content p, #navcp #featul ul a{
+		padding: 4% 0 4% 5%;
+	}
+	
+	#navcp #menu_content p a, #navcp #featul ul a{
+		font-size: 20px; 
+	}
+	
+	#navcp #featul{
+		padding: 0 0 6% 20%;
+	}
+}
+

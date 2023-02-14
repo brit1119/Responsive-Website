@@ -1,0 +1,392 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	width: 71%;
+	margin: auto;
+}
+
+
+/*header logo*/
+.logo{
+	width: 100%;
+	padding: 1% 0 10% 0;
+}
+
+header .kh, header .khc{
+	float: left;
+	font-family: Helvetica, "sans-serif";
+	font-size: 32px;
+	text-transform: uppercase;
+	color: black;
+}
+
+header .kh{
+	padding: 2% 0;
+	font-weight: 700;
+}
+
+header .khc{
+	padding: 1.7% 3%;
+	font-weight: 900
+}
+
+#navcpButton, #navcp{
+	display: none;
+}
+
+
+
+/*graphic*/
+#graphic{
+	height: 31vh;
+}
+
+#graphic_title{
+	float: right;
+	padding: 0 8% 0 0;
+}
+
+#graphic_title h1{
+	font-family: helvetica;
+	font-size: 64px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#graphic_topics{
+	padding: 4.5% 10%;
+}
+
+#graphic_topics p{
+	padding: 1.5% 0;
+}
+
+#graphic_topics p a{
+	text-decoration: none;
+	font-family: helvetica;
+	text-transform: uppercase;
+	font-size: 32px;
+	color: gray;
+	font-weight: lighter;
+	transition: color 400ms linear 0ms;
+}
+
+#graphic_topics p a:hover{
+	font-weight: bolder;
+	color: black;
+}
+
+
+
+
+/*content*/
+#content{
+	padding: 9% 0;
+}
+
+#content .graphic{
+	width: 75%;
+	padding: 0.5% 0 12% 0;
+}
+
+#content .graphic p, #content .graphic h3{
+	font-family: helvetica;
+	font-size: 16px;
+	padding: 1.5% 0 1.5% 0;
+}
+
+#content .graphic p{
+	text-align: justify;
+}
+
+#content .graphic h3{
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+#content .swiper{
+	width: 100%;
+	height: auto;
+}
+
+#content .swiper-slide img{
+	width: 100%;
+}
+
+#content .swiper .swiper-button-next,  #content .swiper .swiper-button-prev{
+	color: black;
+}
+
+#content .swiper .swiper-pagination-bullet-active{
+	background: black;
+}
+
+#content img{
+	float: right;
+	width: 10%;
+	padding: 0 2%;
+}
+
+
+
+
+/*footer*/
+footer{
+	border-top: solid 7px #7F0019;
+	padding: 6% 0;
+}
+
+footer h1 a{
+	text-decoration: none;
+	font-family: helvetica;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 74px;
+	color: black;
+}
+
+footer #nav{
+	font-family: helvetica;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+footer p{
+	padding: 3% 0;
+}
+
+footer p a{
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+footer #socials{
+	padding: 0 0 0 4%;
+}
+
+footer #socials a{
+	float: left;
+	width: 8%;
+}
+
+footer #socials a img{
+	width: 40%;
+}
+
+
+
+
+@media (max-width:1000px){
+	body{
+		width: 96%;
+	}
+	
+	
+		
+	/*menu*/
+	#navcpButton, #navcp{
+		display: block;
+	}
+	
+	#navcpButton{
+		background: radial-gradient(#111111);
+		width: 28px;
+		height: 24px;
+		padding: 2px 5px;
+		position: fixed;
+		top: 20px;
+		right: 20px;
+		z-index: 10;	
+		cursor: pointer;
+	}
+
+
+	#navcpButton > div {
+		width: 26px;
+		height: 4px;
+		background: black;
+		margin: 3px 0;
+		border-radius: 4px;
+	}
+
+
+	#navcp {
+		z-index: 9;
+		background-color: white;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0px;
+		right: -2000px;
+		transition:right 300ms linear 0s;
+	}
+	
+
+	.logo .kh , .logo .khc{
+		font-size: 24px;
+	}
+	
+	#navcp .logo{
+		padding: 1% 0 4% 2%;
+	}
+
+	#navcp .logo p{
+		color: black;
+	}
+	
+	#navcp #menu_content{
+		padding: 10% 0 5% 10%;
+	}
+	
+	#navcp #menu_content p, #navcp #featul ul a{
+		padding: 2% 0 3% 5%;
+	}
+	
+	#navcp #menu_content p a, #navcp #featul ul a{
+		font-family: helvetica;
+		font-size: 24px;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: left;
+		color: black;
+	}
+	
+	#navcp #featul{
+		padding: 0 0 3% 20%;
+	}
+
+	#navcp #featul ul{
+		list-style-type: none;
+	}
+
+	#navcp #featul ul a{
+		color: grey;
+	}
+	
+	#navcp #socialm{
+		padding: 5% 0 0 12%;
+	}
+	
+	#navcp #socialm img{
+		width: 8%;
+		float: left;
+		padding: 0 3% 0 0;
+		cursor: pointer;
+	}	
+	
+	
+	
+	#graphic_topics{
+		padding: 7% 0 ;
+	}
+	
+	#graphic_title{
+		position: fixed;
+		padding: 0 8% 0 83%;
+	}
+	
+	#graphic_title h1{
+		font-size: 48px;
+	}
+	
+	#graphic_topics p a{
+		font-size: 28px;
+		color: dimgrey;
+		font-weight: 300;
+	}
+	
+	#graphic_topics p a:hover{
+		font-size: 28px;
+		color: dimgrey;
+		font-weight: 300;
+	}
+	
+	#content{
+		padding: 9% 0 0 0;
+	}
+	#content .graphic h3{
+		font-size: 20px;
+	}
+	
+	#content .graphic p{
+		padding: 4% 0 0 0;
+	}
+	
+	#content a img{
+		display: none;
+	}
+	
+	footer{
+		display: none;
+	}
+}
+
+
+
+@media (max-width:550px){
+	
+	#navcp #menu_content{
+		padding: 20% 0 10% 10%;
+	}
+	
+	#navcp #menu_content p, #navcp #featul ul a{
+		padding: 4% 0 4% 5%;
+	}
+	
+	#navcp #menu_content p a, #navcp #featul ul a{
+		font-size: 20px; 
+	}
+	
+	#navcp #featul{
+		padding: 0 0 6% 20%;
+	}
+	
+	
+	#graphic_topics{
+		padding: 10% 0;
+	}
+	
+	#graphic_topics p a{
+		font-size: 24px;
+		color: dimgrey;
+		font-weight: 300;
+	}
+	
+	#graphic_topics p a:hover{
+		font-size: 24px;
+		color: dimgrey;
+		font-weight: 300;
+	}
+	
+	#graphic_topics p{
+		padding: 4% 0;
+	}
+	
+	#graphic_title{
+		position: fixed;
+		padding: 8% 1.5% 0 89%;
+	}
+	
+	#graphic_title h1{
+		font-size: 36px;
+	}
+	
+	#content .graphic{
+		width: 90%;
+	}
+	
+	#content .graphic p{
+		font-size: 14px;
+	}
+}
